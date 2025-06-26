@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Профіль | Gley</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="social-buttons">
+    <button class="social-button" 
+            data-url="https://instagram.com/gley.lia" 
+            data-icon="https://cdn-icons-png.flaticon.com/512/174/174855.png"
+            data-handle="@gley.lia"
+            data-desc="Artist">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+    </button>
+
+    <button class="social-button" 
+            data-url="https://x.com/sssalyuk" 
+            data-icon="https://cdn-icons-png.flaticon.com/512/733/733635.png"
+            data-handle="@sssalyuk"
+            data-desc="глина або просто не смішні пріколи">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="X" />
+    </button>
+
+    <button class="social-button" 
+            data-url="https://tiktok.com/@gleyee" 
+            data-icon="https://cdn-icons-png.flaticon.com/512/3046/3046126.png"
+            data-handle="@gleyee"
+            data-desc="ґлей">
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046126.png" alt="TikTok" />
+    </button>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="profile-card">
+    <div class="profile-image">
+      <img src="images/photo_2.jpg" alt="User photo" />
+    </div>
+    <div class="profile-name">
+      Gley
+    </div>
+    <div class="profile-title">artist & junior designer</div>
+
+    <!-- Суцільна кнопка з ніком, описом та іконкою соцмережі -->
+    <a href="https://instagram.com/gley.lia" target="_blank" id="profileLink" class="x-profile">
+      <img id="socialIcon" src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Social Icon" />
+      <div class="x-text">
+        <div class="handle" id="profileHandle">@gley.lia</div>
+        <div class="desc" id="profileDesc">Artist</div>
+      </div>
+    </a>
+  </div>
+
+  <audio id="clickSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_867f00ddbe.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

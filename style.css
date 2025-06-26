@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #000000, #0056b3);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Контейнер для кнопок соцмереж */
+.social-buttons {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.05);
+  background-color: #1a1a1a;
+  width: 320px;
+  justify-content: center;
+}
+
+/* Кнопки соцмереж */
+.social-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  background-color: #1e1e1e;
+  border: 2px solid #333;
+  box-shadow: inset 0 0 10px #000, 0 4px 12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.social-button:hover {
+  background-color: #2a2a2a;
+  border-color: #00aaff;
+  box-shadow: 0 0 8px #00aaff, inset 0 0 10px #000;
+}
+
+.social-button:active {
+  transform: scale(0.95);
+  background-color: #222;
+}
+
+.social-button img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+}
+
+/* Відстань між секціями */
+.spacer {
+  height: 40px; /* половина попереднього відступу */
+}
+
+/* Картка профілю */
+.profile-card {
+  background-color: #1a1a1a;
+  border-radius: 24px;
+  width: 320px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Фото профілю */
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #1c1c1c;
+  background-color: #0d0d0d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ім'я користувача з іконкою підтвердження */
+.profile-name {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.verified {
+  width: 18px;
+  height: 18px;
+}
+
+/* Професія/титул */
+.profile-title {
+  font-size: 14px;
+  margin-top: 4px;
+  color: #bbb;
+}
+
+/* Велика клікабельна кнопка з ніком, описом та іконкою соцмережі */
+.x-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #111;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  justify-content: start;
+  box-sizing: border-box;
+  transition: background-color 0.2s ease;
+  margin-top: 16px;
+}
+
+.x-profile:hover {
+  background-color: #222;
+}
+
+/* Іконка соцмережі всередині кнопки */
+.x-profile img#socialIcon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* Текстовий блок в кнопці */
+.x-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  text-align: left;
+}
+
+.x-text .handle {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.x-text .desc {
+  font-size: 12px;
+  color: #bbb;
+}
